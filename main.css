@@ -1,0 +1,140 @@
+/********************************************
+ANIMATIONS
+********************************************/
+
+@keyframes colorChange1 {
+    from {background-color: blue;}
+    to {background-color: red;}
+}
+
+@keyframes colorChange2 {
+    0%  {background-color: blue;}
+    33% {background-color: red;}
+    66% {background-color: yellow;}
+    99% {background-color: blue;}
+}
+
+@keyframes spin {
+    from {}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes travel {
+    from {margin-left: 0px;}
+    to {margin-left: 300px;}
+}
+
+@keyframes flip {
+    from {}
+    to {transform: rotateY(180deg);}
+}
+
+@keyframes zanyTrip {
+    0%  {
+        background-color: blue;
+        left: 0px;
+        transform: rotateX(180deg);
+        ;
+    }
+    50% {
+        background-color: red;
+        transform: rotate(360deg);
+    }
+    66% {
+        background-color: yellow;
+        transform: rotateX(180deg);
+    }
+    99% {
+        background-color: blue;
+        left: 300px;
+        transform: rotateY(180deg);
+    }
+}
+/********************************************
+EXAMPLES
+********************************************/
+
+#example1 {
+    border-radius: 100px;
+    animation: colorChange1;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#example2 {
+    border-radius: 100px;
+    animation: colorChange2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#example3 {
+    border-radius: 100px;
+    animation: travel;
+    animation-duration: 3s;
+    position: relative;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#example4 {
+    border-radius: 20px;
+    animation: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#example5 {
+    border-radius: 100px;
+    animation: flip;
+    animation-duration: 3s;
+    position: relative;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#example6 {
+    border-radius: 20px;
+    animation: zanyTrip;
+    animation-duration: .5s;
+    position: relative;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+/********************************************
+FORMATTING
+********************************************/
+
+#listFormat {
+    font-size: 1.4em;
+}
+h1 {
+    font-size: 3em;
+    text-decoration: underline;
+}
+.shapeDefault {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    margin-top: 0px;
+    background-color: blue;
+}
+
+.alt1 {
+    padding-left: 100px;
+    margin-top: -10px;
+    padding: 200px;
+}
+
+.alt2 {
+    background-color: gainsboro;
+    margin-top: -10px;
+    padding: 200px;
+    
+}
