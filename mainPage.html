@@ -4,6 +4,7 @@
         <meta charset="utf - 8">
         <title>CSS Animations</title>
         <link rel="stylesheet" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
     </head>
     
     <header>
@@ -19,6 +20,24 @@
                 <li>direction</li>
                 <li>iteration-count</li>
             </ul>
+            <div id="codeSnip">
+                <p> @keyframes colorChange1</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> from {background-color: blue;}</p>
+                    <p> to {background-color: red;}</p>
+                </div>
+                <p> }</p>
+                <p> #example1</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> animation: colorChange1;</p>
+                    <p> animation-duration: 6s;</p>
+                    <p> animation-direction: alternate;</p>
+                    <p> animation-iteration-count: infinite;</p>
+                </div>
+                <p> }</p>
+            </div>
         </div>
         
         <div class="alt1">
@@ -28,6 +47,26 @@
                 <li>duration</li>
                 <li>iteration-count</li>
             </ul>
+            <div id="codeSnip">
+                <p> @keyframes colorChange2</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> 0%  {background-color: blue;}</p>
+                    <p> 33% {background-color: red;}</p>
+                    <p> 66% {background-color: yellow;}</p>
+                    <p> 99% {background-color: blue;}</p>
+                </div>
+                <p> }</p>
+                <p> #example2</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> animation: colorChange2;</p>
+                    <p> animation-duration: 6s;</p>
+                    <p> animation-direction: alternate;</p>
+                    <p> animation-iteration-count: infinite;</p>
+                </div>
+                <p> }</p>
+            </div>
         </div>
         
         <div class="alt2">
@@ -39,6 +78,26 @@
                 <li>iteration-count</li>
                 <li>timing-function</li>
             </ul>
+            <div id="codeSnip">
+                <p> @keyframes travel</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> from {margin-left: 0px;}</p>
+                    <p> to {margin-left: 300px;}</p>
+                </div>
+                <p> }</p>
+                <p> #example3</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> animation: travel;</p>
+                    <p> animation-duration: 3s;</p>
+                    <p> position: relative;</p>
+                    <p> animation-direction: alternate;</p>
+                    <p> animation-iteration-count: infinite;</p>
+                    <p> animation-timing-function: ease-in-out;</p>
+                </div>
+                <p> }</p>
+            </div>
         </div>
         
         <div class="alt1">
@@ -49,6 +108,24 @@
                 <li>iteration-count</li>
                 <li>timing-function</li>
             </ul>
+            <div id="codeSnip">
+                <p> @keyframes spin</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> from {}</p>
+                    <p> to {transform: rotate(360deg);}</p>
+                </div>
+                <p> }</p>
+                <p> #example4</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> animation: spin;</p>
+                    <p> animation-duration: 6s;</p>
+                    <p> animation-iteration-count: infinite;</p>
+                    <p> animation-timing-function: linear;</p>
+                </div>
+                <p> }</p>
+            </div>
         </div>
         
         <div class="alt2">
@@ -59,6 +136,26 @@
                 <li>iteration-count</li>
                 <li>timing-function</li>
             </ul>
+            <div id="codeSnip">
+                <p> @keyframes flip</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> from {}</p>
+                    <p> to {transform: rotateY(180deg);}</p>
+                </div>
+                <p> }</p>
+                <p> #example5</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> animation: flip;</p>
+                    <p> animation-duration: 3s;</p>
+                    <p> position: relative;</p>
+                    <p> animation-direction: alternate;</p>
+                    <p> animation-iteration-count: infinite;</p>
+                    <p> animation-timing-function: linear;</p>
+                </div>
+                <p> }</p>
+            </div>
         </div>
         
         <div class="alt1">
@@ -69,5 +166,57 @@
                 <li>iteration-count</li>
                 <li>timing-function</li>
             </ul>
+            <div id="codeSnip">
+                <p> @keyframes zanyTrip</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> 0%  {</p>
+                    <div id="inner-content-css">
+                        <p> background-color: blue;</p>
+                        <p> left: 0px;</p>
+                        <p> transform: rotateX(180deg);</p>
+                    </div>
+                    <p> }</p>
+                    <p> 50% {</p>
+                    <div id="inner-content-css">
+                        <p> background-color: red;</p>
+                        <p> transform: rotate(360deg);</p>
+                    </div>
+                    <p> }</p>
+                    <p> 66% {</p>
+                    <div id="inner-content-css">
+                        <p> background-color: yellow;</p>
+                        <p> transform: rotateX(180deg);</p>
+                    </div>
+                    <p> }</p>
+                    <p> 99% {</p>
+                    <div id="inner-content-css">
+                        <p> background-color: blue;</p>
+                        <p> left: 300px;</p>
+                        <p> transform: rotateY(180deg);</p>
+                    </div>
+                    <p> }</p>
+                </div>
+                <p> }</p>
+                <p> #example6</p>
+                <p> {</p>
+                <div id="content-css">
+                    <p> animation: zanyTrip;</p>
+                    <p> animation-duration: .5s;</p>
+                    <p> position: relative;</p>
+                    <p> animation-direction: alternate;</p>
+                    <p> animation-iteration-count: infinite;</p>
+                    <p> animation-timing-function: ease-in;</p>
+                </div>
+                <p> }</p>
+            </div>
         </div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+    ">
+    <input type="image" src="http://www.animal112.com/images/PayPal+donate+button.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" id="donate">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
     </body>
