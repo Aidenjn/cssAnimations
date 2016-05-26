@@ -80,7 +80,7 @@ EXAMPLES
 }
 
 #example4 {
-    border-radius: 20px;
+    border-radius: 40px;
     animation: spin;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -110,6 +110,32 @@ EXAMPLES
 /********************************************
 FORMATTING
 ********************************************/
+#codeSnip {
+/*
+    margin: -10px;
+    padding: 0px;
+*/
+    line-height: 4px;
+    color: black;
+    background: beige;
+    text-indent: 10px;
+    padding: 3%;
+    font-family: 'Droid Sans Mono';
+}
+#content-css {
+    text-indent: 10%;
+}
+#inner-content-css {
+    text-indent: 20%;
+}
+
+#donate {
+    margin-left: 25%;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 30px;
+}
 
 #listFormat {
     font-size: 1.4em;
